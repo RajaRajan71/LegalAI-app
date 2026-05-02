@@ -14,13 +14,20 @@ st.set_page_config(page_title="Legal AI Assistant", layout="wide")
 st.title("⚖️ Legal AI Assistant")
 st.write("Analyze and query legal documents using multi-agent reasoning.")
 
-# Load API Key (will be added via Space Secrets/Local .env)
-if "GROQ_API_KEY" in st.secrets:
-    groq_api_key = st.secrets["GROQ_API_KEY"]
-else:
-    load_dotenv()
-    groq_api_key = os.getenv("GROQ_API_KEY")
+# Load from .env locally
+load_dotenv()
 
+# Safely check environment variables or Hugging Face secrets
+if "GROQ_API_KEY" in os.environ:
+    groq_api_key = os.environ["GROQ_API_KEY"]
+else:
+    try:
+        groq_api_key = st.secrets["GROQ_API_KEY"]
+    except Exception:
+        st.error("GROQ_API_KEY is not set. Please set it in your environment variables or Hugging Face secrets.")
+        st.stop()
+
+# Initialize Groq Client
 client = Groq(api_key=groq_api_key)
 
 @st.cache_resource
