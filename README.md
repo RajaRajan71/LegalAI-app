@@ -18,6 +18,11 @@ A production-ready Multi-Agent Legal AI application that leverages Retrieval-Aug
 - Streamlit web interface
 - Hugging Face deployment
 - Semantic search over legal documents
+## 📷 Demo
+
+![Home](images/Screenshot (385).png)
+
+![Query](images/Screenshot (386).png)
 
 ## 📈 Project Highlights
 
