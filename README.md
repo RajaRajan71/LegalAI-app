@@ -5,6 +5,20 @@ An advanced, multi-agent AI application designed to analyze Indian statutory law
 ## 🚀 Hugging Face Deployment
 * **Live App:** [https://huggingface.co/spaces/rajann/legalapp](https://huggingface.co/spaces/rajann/legalapp)
 
+# ⚖️ Legal AI Assistant
+
+A production-ready Multi-Agent Legal AI application that leverages Retrieval-Augmented Generation (RAG) to analyze Indian laws, regulations, and landmark case judgments. Built using LangChain, Llama-3, FAISS, ChromaDB, and Streamlit to provide fast, citation-based legal assistance.
+
+## 🚀 Key Features
+
+- Multi-Agent RAG Architecture
+- Llama-3 powered legal reasoning
+- FAISS & ChromaDB vector search
+- Citation-based responses
+- Streamlit web interface
+- Hugging Face deployment
+- Semantic search over legal documents
+
 ## 📚 Supported Documents
 The assistant includes vector representations for the following core corpora:
 * **Statutory Acts:** Companies Act (2013), Consumer Protection Act (2019), Indian Contract Act (1872), Limited Liability Partnership (LLP) Act (2008), Sale of Goods Act (1930).
@@ -14,6 +28,20 @@ The assistant includes vector representations for the following core corpora:
   * *M/s Hindustan Coca-Cola Beverages Pvt. Ltd. vs Cce Visakhapatnam*
   * *Ramesh Yadav vs The New India Assurance Company Limited*
 * **Regulatory Materials:** Framework conditions and guidelines for the Competition Commission of India (CCI) and the Warehousing Development and Regulatory Authority (WDRA).
+
+
+## 🛠 Tech Stack
+
+- Python
+- LangChain
+- Llama-3
+- FAISS
+- ChromaDB
+- Hugging Face
+- Streamlit
+- Groq API
+
+
 
 ## 🚀 How to Use
 
